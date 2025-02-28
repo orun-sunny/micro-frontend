@@ -18,6 +18,14 @@ declare module "host/Header" {
     }>;
     export default Header;
 }
+
+declare module "host/Footer" {
+
+
+
+
+    export default Footer;
+}
 declare module "host/Features" {
     import React from "react";
 

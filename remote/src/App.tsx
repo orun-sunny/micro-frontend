@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Trial from "./components/Trial/Trial";
 import Features from "host/Features";
 import Faq from "./components/FAQ/Faq";
+import Footer from "host/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Trial />
       <Features />
       <Faq />
+      <Footer />
     </main>
   );
 }

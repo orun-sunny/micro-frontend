@@ -1,10 +1,13 @@
 import { FC } from "react";
 import PricingCard from "./PricingCard";
 import { PRICING_DATA } from "../../config";
-import { TPricePlan } from "../Hero/Hero";
+
+export type TPricePlan = "monthly" | "yearly"; // Define it here
+
 interface IProps {
   plan: TPricePlan;
 }
+
 const Pricing: FC<IProps> = ({ plan }) => {
   return (
     <section className="relative size-full pt-20 mb-16 lg:mb-20">

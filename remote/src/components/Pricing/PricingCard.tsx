@@ -1,7 +1,7 @@
 import Button from "host/Button";
 import Item from "./Item";
 import { FC } from "react";
-import { TPricePlan } from "../Hero/Hero";
+import { TPricePlan } from "../Pricing/Pricing";
 
 export interface IPricingCard {
   headingText: string;
@@ -52,7 +52,7 @@ const PricingCard: FC<IProps> = ({
               </p>
             </div>
           </div>
-          <div className="flex gap-4 flex-col flex-grow">
+          <div className="flex gap-6 flex-col flex-grow py- 4">
             {items.map((item) => (
               <Item text={item} key={item} />
             ))}

@@ -5,7 +5,7 @@ import Pricing from "../Pricing/Pricing";
 export type TPricePlan = "monthly" | "yearly";
 
 const Hero = () => {
-  const [plan, setPlan] = useState<TPricePlan>("yearly");
+  const [plan, setPlan] = useState<TPricePlan>("monthly");
 
   return (
     <>
@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="bg-[#ECECEC] p-1 flex rounded-lg mx-auto relative">
             {/* Animated Slider */}
             <div
-              className={`absolute  bg-white rounded-lg transition-transform top-[4px] bottom-[6px] w-[48%] duration-300 ${
+              className={`absolute  bg-white rounded-lg transition-transform top-[4px] bottom-[4px] w-[48%] duration-300 ${
                 plan === "monthly" ? "translate-x-0" : "translate-x-full"
               }`}
             />
@@ -28,7 +28,6 @@ const Hero = () => {
               MONTHLY
             </button>
             <button
-              onClick={() => setPlan("yearly")}
               className={`px-8 py-2 text-xs font-semibold sm:text-sm relative z-10 ${
                 plan === "yearly" ? "text-primary-500" : "text-gray-500"
               }`}
