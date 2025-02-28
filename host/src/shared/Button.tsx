@@ -12,8 +12,7 @@ interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantClasses = {
   none: "",
-  primary:
-    "bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700 focus:ring focus:ring-primary-300",
+  primary: " text-white  focus:ring focus:ring-primary-300",
   secondary:
     "bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700 rounded",
   outline:

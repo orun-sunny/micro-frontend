@@ -1,6 +1,8 @@
+import BusinessTab from "./BusinessTab/BusinessTab";
+
 export default function Industries() {
   return (
-    <section>
+    <section className="container mb-14">
       <div>
         <h3 className="max-lg:text-xl font-semibold text-center text-orange-600  lg:mb-6 ">
           Industries
@@ -20,6 +22,8 @@ export default function Industries() {
           therapists.
         </p>
       </div>
+
+      <BusinessTab />
     </section>
   );
 }

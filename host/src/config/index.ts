@@ -5,6 +5,7 @@ import muchaMarketing from "../assets/brands/mucha-marketing.png";
 import skinPrecision from "../assets/brands/skin-precision.png";
 import rhLogo from "../assets/brands/rh-logo.png";
 import spaClinics from "../assets/brands/spa-clinics.png";
+export * from "./industries";
 
 export const NAV_LIST: TNavList[] = [
     {
