@@ -2,19 +2,19 @@ import React, { ReactNode } from "react";
 import { CarouselIndicators, CarouselControls, CarouselSlides } from ".";
 
 interface CarouselProps {
-  slidesContent: ReactNode[];
+  Content: ReactNode[];
 }
 
-const Carousel: React.FC<CarouselProps> = ({ slidesContent }) => {
+const Carousel: React.FC<CarouselProps> = ({ Content }) => {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % slidesContent.length);
+    setActiveIndex((prevIndex) => (prevIndex + 1) % Content.length);
   };
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? slidesContent.length - 1 : prevIndex - 1
+      prevIndex === 0 ? Content.length - 1 : prevIndex - 1
     );
   };
 
@@ -24,9 +24,9 @@ const Carousel: React.FC<CarouselProps> = ({ slidesContent }) => {
 
   return (
     <div id="default-carousel" className="relative w-full">
-      <CarouselSlides slidesContent={slidesContent} activeIndex={activeIndex} />
+      <CarouselSlides slidesContent={Content} activeIndex={activeIndex} />
       <CarouselIndicators
-        count={slidesContent.length}
+        count={Content.length}
         activeIndex={activeIndex}
         onSlideTo={handleSlideTo}
       />

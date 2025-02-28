@@ -1,4 +1,5 @@
 import React from "react";
+import { FaChevronLeft, FaAngleRight } from "react-icons/fa6";
 
 interface CarouselControlsProps {
   onNext: () => void; //go to next slide
@@ -17,20 +18,7 @@ const CarouselControls: React.FC<CarouselControlsProps> = ({
         onClick={onPrev}
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60">
-          <svg
-            className="w-4 h-4 !text-gray-100 dark:text-gray-800"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              d="M5 1L1 5l4 4"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          <FaChevronLeft className="w-4 h-4 !text-gray-100 dark:text-gray-800" />
         </span>
       </button>
       <button
@@ -39,20 +27,7 @@ const CarouselControls: React.FC<CarouselControlsProps> = ({
         onClick={onNext}
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60">
-          <svg
-            className="w-4 h-4 !text-gray-100 dark:text-gray-800"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              d="M1 9l4-4-4-4"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          <FaAngleRight className="w-4 h-4 !text-gray-100 dark:text-gray-800" />
         </span>
       </button>
     </>

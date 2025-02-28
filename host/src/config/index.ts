@@ -45,3 +45,26 @@ export const BRANDS = [
     { id: "5", img: rhLogo, alt: "rh-logo" },
     { id: "6", img: spaClinics, alt: "spa-clinics" },
 ];
+
+export const APPOINTMENT_TAGS = [
+    "Doctor",
+    "Lawyer",
+    "Therapist",
+    "Barber",
+    "Spa",
+    "Med Spa",
+    "Psychiatrist",
+    "Consultancy firm",
+];
+export const APPOINTMENT_TOOLS = [
+    "Jane",
+    "Calendly",
+    "Cal.com",
+    "Acuity",
+    "Square appointment",
+    "Simplybook.me",
+    "Zenoti",
+    "Appointy",
+    "Set More",
+    "Honey Book",
+];

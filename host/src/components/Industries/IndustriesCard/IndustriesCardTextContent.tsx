@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { IndustriesCardsProps } from "./IndustriesCards";
-import { GoLinkExternal } from "react-icons/go";
+import { RxExternalLink } from "react-icons/rx";
 
 interface IIndustriesCardTextContentProps
   extends Omit<IndustriesCardsProps, "image"> {
@@ -32,12 +32,9 @@ const IndustriesCardTextContent: FC<IIndustriesCardTextContentProps> = ({
     >
       {description}
     </p>
-    <a
-      className="underline text-gray-100 inline-flex gap-3 items-center max-md:text-sm"
-      href="/"
-    >
+    <a className="underline text-gray-100 inline-flex gap-3 items-center max-md:text-sm">
       Learn more
-      <GoLinkExternal className="max-md:w-3" />
+      <RxExternalLink />
     </a>
   </>
 );

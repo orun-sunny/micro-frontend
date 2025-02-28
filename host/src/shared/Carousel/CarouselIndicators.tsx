@@ -1,9 +1,9 @@
 import React from "react";
 
 interface CarouselIndicatorsProps {
-  count: number; // Number of indicators
-  activeIndex: number; // Active indicator index
-  onSlideTo: (index: number) => void; // Function to change slide
+  count: number;
+  activeIndex: number;
+  onSlideTo: (index: number) => void;
 }
 
 const CarouselIndicators: React.FC<CarouselIndicatorsProps> = ({
