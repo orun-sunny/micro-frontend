@@ -2,6 +2,7 @@ import Header from "host/Header";
 import { NAV_LIST } from "./config";
 import HeaderActionButtons from "./components/HeaderActionButtons";
 import Hero from "./components/Hero/Hero";
+import Trial from "./components/Trial/Trial";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         className="xl:justify-start xl:gap-12"
       />
       <Hero />
+      <Trial />
     </main>
   );
 }
