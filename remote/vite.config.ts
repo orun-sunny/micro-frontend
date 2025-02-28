@@ -6,11 +6,9 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "remote_app",
-      filename: "remoteEntry.js",
-      exposes: {
-        "./Button": "./src/components/Button",
-        "./MyProvider": "./src/MyContext",
+      name: "remote",
+      remotes: {
+        host: "http://localhost:5001/assets/remoteEntry.js", // Ensure this is correct
       },
       shared: ["react", "react-dom"],
     }),
