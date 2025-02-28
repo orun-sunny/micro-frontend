@@ -3,6 +3,7 @@ import { NAV_LIST } from "./config";
 import HeaderActionButtons from "./components/HeaderActionButtons";
 import Hero from "./components/Hero/Hero";
 import Trial from "./components/Trial/Trial";
+import Features from "host/Features";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       />
       <Hero />
       <Trial />
+      <Features />
     </main>
   );
 }
