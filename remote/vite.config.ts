@@ -8,7 +8,7 @@ export default defineConfig({
     federation({
       name: "remote",
       remotes: {
-        host: "http://localhost:5001/assets/remoteEntry.js", // Ensure this is correct
+        host: "http://localhost:4173/assets/remoteEntry.js", // Ensure this is correct
       },
       shared: ["react", "react-dom"],
     }),
@@ -19,6 +19,6 @@ export default defineConfig({
     cssCodeSplit: false,
   },
   server: {
-    port: 5174, // Ensure App2 runs on a different port
+    port: 5174, 
   },
 });

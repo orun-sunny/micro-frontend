@@ -3,7 +3,7 @@ import { IPricingCard } from "../components/Pricing/PricingCard";
 import { AiOutlineStop } from "react-icons/ai";
 import { BsArrowRepeat } from "react-icons/bs";
 import { MdOutlinePayment, MdAutorenew } from "react-icons/md";
-import { IoInfiniteOutline,IoHeart } from "react-icons/io5";
+import { IoInfiniteOutline, IoHeart } from "react-icons/io5";
 
 
 
@@ -16,6 +16,7 @@ export const NAV_LIST = [
         id: "plans",
         path: "http://localhost:5174/",
         label: "Plans",
+        hasDropDown: false,
     },
     {
         id: "#solutions",

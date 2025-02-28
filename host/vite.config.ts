@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     federation({
       name: "host",
-      filename: "remoteEntry.js", // Expose the remoteEntry at this path
+      filename: "remoteEntry.js", // Expose the remoteEntry
       exposes: {
         "./Button": "./src/shared/Button.tsx",
         "./Card": "./src/shared/Card.tsx",
