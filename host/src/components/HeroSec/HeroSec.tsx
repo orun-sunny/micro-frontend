@@ -3,7 +3,7 @@ import Button from "../../shared/Button";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 const HeroSec = () => {
   return (
-    <section className="my-12 object-cover size-full bg-no-repeat bg-hero-pattern bg-cover bg-center h-full">
+    <section className="my-12 object-cover size-full bg-no-repeat bg-[url('../../../public/BackgroundLine.png')] bg-cover bg-center h-full">
       <div className="mx-auto px-4 sm:text-center max-w-screen-lg space-y-7 ">
         <h1 className="font-bold text-3xl md:text-4xl  md:!leading-[52px] text-balance ">
           Looking for a
