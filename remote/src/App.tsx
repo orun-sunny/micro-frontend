@@ -4,6 +4,7 @@ import HeaderActionButtons from "./components/HeaderActionButtons";
 import Hero from "./components/Hero/Hero";
 import Trial from "./components/Trial/Trial";
 import Features from "host/Features";
+import Faq from "./components/FAQ/Faq";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <Trial />
       <Features />
+      <Faq />
     </main>
   );
 }

@@ -1,3 +1,4 @@
+import { IFaqItem } from "../components/FAQ/FaqItem";
 import { IPricingCard } from "../components/Pricing/PricingCard";
 
 
@@ -85,3 +86,50 @@ export const PRICING_DATA: IPricingCard[] = [
     },
 ];
 
+
+export const FAQ_LIST: (IFaqItem & { id: number })[] = [
+    {
+      id: 1,
+ 
+      title: "Is there a free trial available?",
+      description:
+        "Yes, you can try us for free for 30 days. Our friendly team will work with you to get you up and running as soon as possible.",
+    },
+    {
+      id: 2,
+
+      title: "Can I change my plan later?",
+      description:
+        "Of course, you can change your plan anytime you want. You can also upgrade or downgrade your plan.",
+    },
+    {
+      id: 3,
+
+      title:
+        "May I need to pay full amount while I update plan in the middle of the month?",
+      description:
+        "No you don’t need to pay the full amount if you update the practitioner number. Just pay for available days from the next renew.",
+    },
+    {
+      id: 4,
+
+      title: "Can I disable the auto renew?",
+      description:
+        "You can disable and enable auto renew anytime also you can choose auto renew from different options.",
+    },
+    {
+      id: 5,
+
+      title: "What is your cancellation policy?",
+      description:
+        "We understand that things change. You can cancel your plan at any time in your trial period and we’ll refund you the difference already paid.",
+    },
+    {
+      id: 6,
+
+      title: "Can I run my business Pay As You Go for lifetime",
+      description:
+        "Yes, you can run your business lifetime with Pay As You Go. No additional charges will taken for your plan.",
+    },
+  ];
+  
