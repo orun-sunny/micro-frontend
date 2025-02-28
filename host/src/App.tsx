@@ -1,3 +1,4 @@
+import Brands from "./components/Brands/Brands";
 import HeroImg from "./components/HeroSec/HeroImg";
 import HeroSec from "./components/HeroSec/HeroSec";
 import { NAV_LIST } from "./config";
@@ -10,6 +11,7 @@ function App() {
       <Header navList={NAV_LIST} ActionButtons={HeaderButtons} />
       <HeroSec />
       <HeroImg />
+      <Brands />
     </main>
   );
 }
