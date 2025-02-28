@@ -1,4 +1,5 @@
 import Brands from "./components/Brands/Brands";
+import Features from "./components/Features/Features";
 import HeroImg from "./components/HeroSec/HeroImg";
 import HeroSec from "./components/HeroSec/HeroSec";
 import Industries from "./components/Industries/Industries";
@@ -14,6 +15,7 @@ function App() {
       <HeroImg />
       <Brands />
       <Industries />
+      <Features />
     </main>
   );
 }
